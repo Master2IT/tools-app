@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+ul {
+  list-style: disc;
+
+  ul {
+    list-style: circle;
+  }
+}
+
+ol {
+  list-style: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1, {
+  font-size: 32px;
+}
+
+h2, {
+  font-size: 24px;
+}
+
+h3, {
+  font-size: 18.72px;
+}
+
+h4, {
+  font-size: 16px;
+}
+
+h5, {
+  font-size: 13.28px;
+}
+
+h6, {
+  font-size: 10.72px;
+}
+
+.pattern-1 {
+  background-color: #ffffff;
+  opacity: 0.6;
+  background-size: cover;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 11px), repeating-linear-gradient(#444cf755, #444cf7);
+
+  &.bg-blue-400 {
+    background-color: theme('backgroundColor.blue.400');
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 11px), repeating-linear-gradient(#444cf755, #444cf7);
+  }
+
+  &.bg-yellow-400 {
+    background-color: theme('backgroundColor.yellow.400');
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, theme('backgroundColor.yellow.400') 11px), repeating-linear-gradient(theme('backgroundColor.yellow.100'), theme('backgroundColor.yellow.300'));
+  }
+
+  &.bg-green-400 {
+    background-color: theme('backgroundColor.green.400');
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, theme('backgroundColor.green.400') 11px), repeating-linear-gradient(theme('backgroundColor.green.100'), theme('backgroundColor.green.300'));
+  }
+
+  &.bg-red-400 {
+    background-color: theme('backgroundColor.red.400');
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, theme('backgroundColor.red.400') 11px), repeating-linear-gradient(theme('backgroundColor.red.100'), theme('backgroundColor.red.300'));
+  }
+
+  &.bg-orange-400 {
+    background-color: theme('backgroundColor.orange.400');
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, theme('backgroundColor.orange.400') 11px), repeating-linear-gradient(theme('backgroundColor.orange.100'), theme('backgroundColor.orange.300'));
+  }
+
+  &.bg-pink-400 {
+    background-color: theme('backgroundColor.pink.400');
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, theme('backgroundColor.pink.400') 11px), repeating-linear-gradient(theme('backgroundColor.pink.100'), theme('backgroundColor.pink.300'));
+  }
+
+  &.bg-purple-400 {
+    background-color: theme('backgroundColor.purple.400');
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, theme('backgroundColor.purple.400') 11px), repeating-linear-gradient(theme('backgroundColor.purple.100'), theme('backgroundColor.purple.300'));
+  }
+}
+
+.pattern-2 {
+  opacity: 0.6;
+  background-color: #ffffff;
+  background-image: linear-gradient(#444cf7 2.2px, transparent 2.2px), linear-gradient(90deg, #444cf7 2.2px, transparent 2.2px), linear-gradient(#444cf7 1.1px, transparent 1.1px), linear-gradient(90deg, #444cf7 1.1px, #ffffff 1.1px);
+  background-size: 55px 55px, 55px 55px, 11px 11px, 11px 11px;
+  background-position: -2.2px -2.2px, -2.2px -2.2px, -1.1px -1.1px, -1.1px -1.1px;
+
+  &.bg-blue-400 {
+    background-color: theme('backgroundColor.blue.400');
+    background-image: linear-gradient(#444cf7 2.2px, transparent 2.2px), linear-gradient(90deg, #444cf7 2.2px, transparent 2.2px), linear-gradient(#444cf7 1.1px, transparent 1.1px), linear-gradient(90deg, #444cf7 1.1px, #ffffff 1.1px);
+  }
+
+  &.bg-yellow-400 {
+    background-color: theme('backgroundColor.yellow.400');
+    background-image: linear-gradient(theme('backgroundColor.yellow.400') 2.2px, transparent 2.2px), linear-gradient(90deg, theme('backgroundColor.yellow.400') 2.2px, transparent 2.2px), linear-gradient(theme('backgroundColor.yellow.400') 1.1px, transparent 1.1px), linear-gradient(90deg, theme('backgroundColor.yellow.400') 1.1px, #ffffff 1.1px);
+  }
+
+  &.bg-green-400 {
+    background-color: theme('backgroundColor.green.400');
+    background-image: linear-gradient(theme('backgroundColor.green.400') 2.2px, transparent 2.2px), linear-gradient(90deg, theme('backgroundColor.green.400') 2.2px, transparent 2.2px), linear-gradient(theme('backgroundColor.green.400') 1.1px, transparent 1.1px), linear-gradient(90deg, theme('backgroundColor.green.400') 1.1px, #ffffff 1.1px);
+  }
+
+  &.bg-red-400 {
+    background-color: theme('backgroundColor.red.400');
+    background-image: linear-gradient(theme('backgroundColor.red.400') 2.2px, transparent 2.2px), linear-gradient(90deg, theme('backgroundColor.red.400') 2.2px, transparent 2.2px), linear-gradient(theme('backgroundColor.red.400') 1.1px, transparent 1.1px), linear-gradient(90deg, theme('backgroundColor.red.400') 1.1px, #ffffff 1.1px);
+  }
+
+  &.bg-orange-400 {
+    background-color: theme('backgroundColor.orange.400');
+    background-image: linear-gradient(theme('backgroundColor.orange.400') 2.2px, transparent 2.2px), linear-gradient(90deg, theme('backgroundColor.orange.400') 2.2px, transparent 2.2px), linear-gradient(theme('backgroundColor.orange.400') 1.1px, transparent 1.1px), linear-gradient(90deg, theme('backgroundColor.orange.400') 1.1px, #ffffff 1.1px);
+  }
+
+  &.bg-pink-400 {
+    background-color: theme('backgroundColor.pink.400');
+    background-image: linear-gradient(theme('backgroundColor.pink.400') 2.2px, transparent 2.2px), linear-gradient(90deg, theme('backgroundColor.pink.400') 2.2px, transparent 2.2px), linear-gradient(theme('backgroundColor.pink.400') 1.1px, transparent 1.1px), linear-gradient(90deg, theme('backgroundColor.pink.400') 1.1px, #ffffff 1.1px);
+  }
+
+  &.bg-purple-400 {
+    background-color: theme('backgroundColor.purple.400');
+    background-image: linear-gradient(theme('backgroundColor.purple.400') 2.2px, transparent 2.2px), linear-gradient(90deg, theme('backgroundColor.purple.400') 2.2px, transparent 2.2px), linear-gradient(theme('backgroundColor.purple.400') 1.1px, transparent 1.1px), linear-gradient(90deg, theme('backgroundColor.purple.400') 1.1px, #ffffff 1.1px);
+  }
+}
+
+.pattern-3 {
+  background-color: #ffffff;
+  opacity: 0.6;
+  background-image: linear-gradient(30deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(150deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(30deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(150deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(60deg, #444cf777 25%, transparent 25.5%, transparent 75%, #444cf777 75%, #444cf777), linear-gradient(60deg, #444cf777 25%, transparent 25.5%, transparent 75%, #444cf777 75%, #444cf777);
+  background-size: 22px 39px;
+  background-position: 0 0, 0 0, 11px 19px, 11px 19px, 0 0, 11px 19px;
+}
+
+.pattern-4 {
+  background-color: #ffffff;
+  opacity: 0.6;
+  background-image: linear-gradient(#444cf7 1.1px, transparent 1.1px), linear-gradient(to right, #444cf7 1.1px, #ffffff 1.1px);
+  background-size: 22px 22px;
+}
+
+.pattern-5 {
+  background-color: #ffffff;
+  opacity: 0.6;
+  background-size: 22px 22px;
+  background-image: repeating-linear-gradient(0deg, #444cf7, #444cf7 1.1px, #ffffff 1.1px, #ffffff);
+}
+
+.pattern-6 {
+  background-color: #ffffff;
+  opacity: 0.6;
+  background: repeating-linear-gradient(45deg, #444cf7, #444cf7 5.5px, #ffffff 5.5px, #ffffff 27.5px);
+}
+
+.pattern-7 {
+  background-color: #ffffff;
+  opacity: 0.6;
+  background-image: linear-gradient(135deg, #444cf7 25%, transparent 25%), linear-gradient(225deg, #444cf7 25%, transparent 25%), linear-gradient(45deg, #444cf7 25%, transparent 25%), linear-gradient(315deg, #444cf7 25%, #ffffff 25%);
+  background-position: 11px 0, 11px 0, 0 0, 0 0;
+  background-size: 22px 22px;
+  background-repeat: repeat;
+}
